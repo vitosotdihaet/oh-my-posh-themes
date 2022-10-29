@@ -1,5 +1,4 @@
 *
 !.gitignore
-!starship.toml
 !README.md
 !*.json
