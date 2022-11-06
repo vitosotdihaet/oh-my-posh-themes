@@ -64,7 +64,7 @@
           "powerline_symbol": "\uE0B0",
           "foreground": "#eeeeee",
           "background": "#dfa548",
-          "template": " 🐍 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
+          "template": " 🐍 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
         },
         {
           "background": "#de76ad",
