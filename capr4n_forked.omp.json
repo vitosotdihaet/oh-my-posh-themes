@@ -46,7 +46,7 @@
         },
         {
           "background": "#a078dd",
-          "foreground": "#ffffff",
+          "foreground": "#eeeeee",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "folder_icon": "...",
@@ -57,6 +57,14 @@
           "style": "powerline",
           "template": " {{ .Path }} ",
           "type": "path"
+        },
+        {
+          "type": "python",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#eeeeee",
+          "background": "#dfa548",
+          "template": " 🐍 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
         },
         {
           "background": "#de76ad",
