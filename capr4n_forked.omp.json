@@ -5,17 +5,13 @@
       "alignment": "right",
       "segments": [
         {
-          "foreground":"#003543",
+          "foreground":"#83769c",
+          "properties": {
+            "always_enabled": true
+          },
           "template": "\ue0b6",
-          "type": "time",
+          "type": "executiontime",
           "style": "powerline"
-        },
-        {
-          "background": "#003543",
-          "foreground": "#eeeeee",
-          "style": "plain",
-          "template": " {{ .CurrentDate | date .Format }} ",
-          "type": "time"
         },
         {
           "background": "#83769c",
@@ -51,7 +47,7 @@
           "properties": {
             "folder_icon": "...",
             "folder_separator_icon": "/",
-            "max_depth": 3,
+            "max_depth": 2,
             "style": "agnoster_short"
           },
           "style": "powerline",
@@ -78,7 +74,7 @@
       "type": "prompt"
     }
   ],
-  "console_title_template": "{{if .Root}} {{end}}{{.UserName}} \u2794 📁{{.Folder}}",
+  "console_title_template": "{{if .Root}} {{end}}{{.UserName}}@{{.Folder}}",
   "final_space": true,
   "version": 2
 }
