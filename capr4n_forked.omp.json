@@ -17,17 +17,25 @@
         },
         {
           "background": "#a078dd",
-          "foreground": "#ffffff",
+          "foreground": "#eeeeee",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "folder_icon": "...",
             "folder_separator_icon": "/",
-            "max_depth": 3,
+            "max_depth": 2,
             "style": "agnoster_short"
           },
           "style": "powerline",
           "template": " {{ .Path }} ",
           "type": "path"
+        },
+        {
+          "type": "python",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#eeeeee",
+          "background": "#dfa548",
+          "template": " 🐍 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
         },
         {
           "background": "#de76ad",
@@ -41,7 +49,7 @@
       "type": "prompt"
     }
   ],
-  "console_title_template": "{{if .Root}} {{end}}{{.UserName}} \u2794 📁{{.Folder}}",
+  "console_title_template": "{{if .Root}} {{end}}{{.UserName}}@{{.Folder}}",
   "final_space": true,
   "version": 2
 }
